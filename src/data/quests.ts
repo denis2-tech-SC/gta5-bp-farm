@@ -1,4 +1,4 @@
-import type { QuestCategory } from './types'
+import type { QuestCategory } from '../types'
 
 export const questCategories: QuestCategory[] = [
   {
