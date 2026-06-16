@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-gta-bg: #0c0c10;
+  --color-gta-surface: #14141c;
+  --color-gta-surface-hover: #1c1c28;
+  --color-gta-border: #2a2a3a;
+  --color-gta-orange: #f5a623;
+  --color-gta-orange-dim: #c47d0e;
+  --color-gta-green: #4ade80;
+  --color-gta-text: #e8e8ef;
+  --color-gta-muted: #8888a0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-gta-bg);
+  color: var(--color-gta-text);
+  min-height: 100dvh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
